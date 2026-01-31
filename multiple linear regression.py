@@ -78,7 +78,7 @@ score = r2_score(y_test, y_pred)
 print(f"\nModel Accuracy (R² Score): {score:.2f}")
 
 # Step 11: Answer Priya's Question
-new_project = [[15, 2]]  # 15 pages, 2 days deadline
+new_project = [[10, 2]]  # 10 pages, 2 days deadline
 predicted_rate = model.predict(new_project)
-print(f"\nPriya's Question: 15-page website, 2-day deadline")
+print(f"\nPriya's Question: 10-page website, 2-day deadline")
 print(f"Recommended Rate: ₹{predicted_rate[0]:,.0f}")
